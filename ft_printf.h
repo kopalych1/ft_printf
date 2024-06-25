@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 15:05:47 by akostian          #+#    #+#             */
-/*   Updated: 2024/04/29 15:32:12 by akostian         ###   ########.fr       */
+/*   Updated: 2024/06/25 16:07:50 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 # include <stdarg.h>
 # include <limits.h>
 # include <stdlib.h>
+
+void	ft_printf(const char *str, ...);
 
 /* PUT */
 
