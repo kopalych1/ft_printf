@@ -6,7 +6,7 @@
 /*   By: akostian <akostian@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/25 16:02:25 by akostian          #+#    #+#             */
-/*   Updated: 2024/07/02 12:18:12 by akostian         ###   ########.fr       */
+/*   Updated: 2024/07/03 17:25:12 by akostian         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,10 @@ int	ft_printf(const char *str, ...)
 	va_start(args, str);
 	while (*str)
 	{
-		if (*str == '%' && ft_strchr("cspdiuxX%", *(str + 1)))
+		if (*str == '%')
 		{
-			route(*(str + 1), args, &length);
-			str += 2;
+			if (ft_strchr("cspdiuxX%", *str++))
+				route(*str++, args, &length);
 		}
 		else
 		{
