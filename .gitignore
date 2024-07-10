@@ -1,5 +1,6 @@
 *
 
+!.macos
 !.gitignore
 !Makefile
 !*.h
